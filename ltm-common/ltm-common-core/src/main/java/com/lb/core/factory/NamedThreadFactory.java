@@ -1,9 +1,10 @@
-package com.lb.core.utils;
+package com.lb.core.factory;
 
 import java.util.concurrent.ThreadFactory;
 import java.util.concurrent.atomic.AtomicInteger;
 
 /**
+ * 带名字的 线程 工厂类
  * Created by libo on 2017/5/2.
  */
 public class NamedThreadFactory  implements ThreadFactory{

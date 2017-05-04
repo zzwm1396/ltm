@@ -1,6 +1,6 @@
 package com.lb.core.support;
 
-import com.lb.core.utils.NamedThreadFactory;
+import com.lb.core.factory.NamedThreadFactory;
 
 import java.util.concurrent.Executors;
 import java.util.concurrent.ScheduledExecutorService;
