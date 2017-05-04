@@ -1,6 +1,6 @@
 package com.lb.core.utils;
 
-import com.lb.core.node.NodeInfo;
+import com.lb.core.node.Node;
 import lombok.extern.slf4j.Slf4j;
 import org.apache.commons.lang3.StringUtils;
 
@@ -25,19 +25,19 @@ public class NodeRegistryUtils {
      * @param fullPath
      * @return
      */
-    public static NodeInfo parse(String fullPath){
-        NodeInfo nodeInfo = new NodeInfo();
+    public static Node parse(String fullPath){
+        Node node = new Node();
         String[] nodeDir = fullPath.split("/");
 
-        return nodeInfo;
+        return node;
     }
 
     /**
      * 根据节点获取配置路径信息
-     * @param nodeInfo
+     * @param node
      * @return
      */
-    public static String getFullPath(NodeInfo nodeInfo){
+    public static String getFullPath(Node node){
         StringBuffer path = new StringBuffer();
 
         return path.toString();

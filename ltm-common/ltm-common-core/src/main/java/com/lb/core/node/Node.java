@@ -1,5 +1,6 @@
 package com.lb.core.node;
 
+import com.lb.core.cluster.NodeType;
 import com.lb.core.utils.NodeRegistryUtils;
 import lombok.Getter;
 import lombok.Setter;
@@ -10,12 +11,17 @@ import lombok.Setter;
  */
 @Getter
 @Setter
-public class NodeInfo {
+public class Node {
 
     /**
      * 是否是master节点
      */
     private boolean master = false;
+
+    /**
+     * 节点类型
+     */
+    private NodeType nodeType;
 
     /**
      * 是否是备用节点
@@ -66,6 +72,11 @@ public class NodeInfo {
      * 节点字符串基础信息
      */
     private String fullString;
+
+    /**
+     * 节点组
+     */
+    private String group;
 
     @Override
     public int hashCode() {

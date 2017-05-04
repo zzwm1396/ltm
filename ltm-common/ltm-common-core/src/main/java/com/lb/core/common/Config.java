@@ -1,5 +1,6 @@
 package com.lb.core.common;
 
+import com.lb.core.cluster.NodeType;
 import com.lb.core.constant.Constants;
 import lombok.Getter;
 import lombok.Setter;
@@ -69,6 +70,11 @@ public class Config implements Serializable{
      * 集群名字
      */
     private String clusterName;
+
+    /**
+     * 节点类型
+     */
+    private NodeType nodeType;
 
     /**
      * 参数信息

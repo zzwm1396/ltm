@@ -1,5 +1,6 @@
 package com.lb.core.ec;
 
+import com.lb.core.constant.EcTopic;
 import lombok.Getter;
 import lombok.Setter;
 
@@ -14,11 +15,11 @@ import java.util.Map;
 @Getter
 public class EventInfo {
 
-    private String topic;
+    private EcTopic topic;
 
     private Map<String, Object> params;
 
-    public EventInfo(String topic){
+    public EventInfo(EcTopic topic){
         this.topic = topic;
     }
 

@@ -18,7 +18,6 @@ import java.util.Observer;
 public class EventSubscriber {
 
     private String id;
+
     private Observer observer;
-
-
 }
